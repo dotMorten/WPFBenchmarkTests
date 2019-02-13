@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFrameworks>net471;netcoreapp3.0</TargetFrameworks>
-	<PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)'=='net471'">
@@ -28,7 +28,7 @@
   </ItemGroup>
   
   <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp3.0'">
-	<PackageReference Include="Microsoft.WindowsDesktop.App">
+    <PackageReference Include="Microsoft.WindowsDesktop.App">
       <Version>3.0.0-alpha-27128-4</Version>
     </PackageReference>
   </ItemGroup>
