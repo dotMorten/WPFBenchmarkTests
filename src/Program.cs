@@ -23,7 +23,7 @@ namespace WPFUIBenchmark
             var test = new BenchmarkTests();
             test.Setup();
             test.LoadImageControl().Wait();
-            Task.Delay(1000).Wait();
+            Task.Delay(5000).Wait();
             test.Cleanup();
 #else
             var summary = BenchmarkRunner.Run<BenchmarkTests>();
@@ -70,13 +70,11 @@ namespace WPFUIBenchmark
                     img.LayoutUpdated += (s, e) =>
                     {
                         if (img.ActualWidth > 0)
-                        {
                             tcs.TrySetResult(null);
-                        }
                     };
-                    app.MainWindow.Content = img;
                     TaskCompletionSource<object> tcs2 = new TaskCompletionSource<object>();
                     img.Loaded += (s, e) => tcs.SetResult(null);
+                    app.MainWindow.Content = img;
                     await tcs.Task;
                     var imageSource = new System.Windows.Media.Imaging.BitmapImage();
                     imageSource.CreateOptions = System.Windows.Media.Imaging.BitmapCreateOptions.DelayCreation;

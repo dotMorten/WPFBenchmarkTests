@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28516.95
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFUIBenchmark", "src\WPFUIBenchmark.csproj", "{11525199-97D4-40F9-803E-590CB2871665}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11525199-97D4-40F9-803E-590CB2871665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11525199-97D4-40F9-803E-590CB2871665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11525199-97D4-40F9-803E-590CB2871665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11525199-97D4-40F9-803E-590CB2871665}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94B2A69B-7675-40F3-86D9-EF842C09A16B}
+	EndGlobalSection
+EndGlobal

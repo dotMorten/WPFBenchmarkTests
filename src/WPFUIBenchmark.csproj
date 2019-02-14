@@ -1,9 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Sdk="Microsoft.NET.Sdk.WindowsDesktop" Project="Sdk.props" Condition="'$(TargetFramework)'=='netcoreapp3.0'"/>
+  
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFrameworks>net471;netcoreapp3.0</TargetFrameworks>
     <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseWpf>true</UseWpf>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)'=='net471'">
@@ -27,10 +30,5 @@
     </PackageReference>
   </ItemGroup>
   
-  <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp3.0'">
-    <PackageReference Include="Microsoft.WindowsDesktop.App">
-      <Version>3.0.0-alpha-27128-4</Version>
-    </PackageReference>
-  </ItemGroup>
-  
+  <Import Sdk="Microsoft.NET.Sdk.WindowsDesktop" Project="Sdk.targets" Condition="'$(TargetFramework)'=='netcoreapp3.0'"/>
 </Project>
